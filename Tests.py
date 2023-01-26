@@ -11,6 +11,4 @@ def test_answer_2():
   assert func(3) == 5
 
 def test_hello_world(capfd):
-  HelloWorld.main()
-  out, err = capfd.readouterr()
-  assert out == "Hello World!\n"
+  assert HelloWorld.main() == "Hello World!"
